@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Slik Preview</title>
+	<link rel="stylesheet" href="dist/slik.css">
+
+	<style>
+		.container{
+			width: 768px;
+
+			margin: 0 auto;
+			padding: 20px 0;
+		}
+
+		.block{
+			display: block;
+			background-color: #f2f2f2;
+			border-radius: 1px;
+			text-align: center;
+
+			color: #181818;
+			height: 28px;
+			line-height: 28px;
+			font-size: 12px;
+			font-weight: 700;
+			margin-bottom: 15px;
+		}
+
+		.drop{
+			position: relative;
+			float: left;
+			margin-right: 30px;
+			display: block;
+			opacity: 1;
+		}
+	
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div id="grid">
+			<div class="r">
+				<div class="c c1 block">1</div>
+				<div class="c c11 block">11</div>
+			</div>
+			<div class="r">
+				<div class="c c2 block">2</div>
+				<div class="c c10 block">10</div>
+			</div>
+			<div class="r">
+				<div class="c c3 block">3</div>
+				<div class="c c9 block">9</div>
+			</div>
+			<div class="r">
+				<div class="c c4 block">4</div>
+				<div class="c c8 block">8</div>
+			</div>
+			<div class="r">
+				<div class="c c5 block">5</div>
+				<div class="c c7 block">7</div>
+			</div>
+			<div class="r">
+				<div class="c c6 block">6</div>
+				<div class="c c6 block">6</div>
+			</div>
+			<div class="r">
+				<div class="c c7 block">7</div>
+				<div class="c c5 block">5</div>
+			</div>
+			<div class="r">
+				<div class="c c8 block">8</div>
+				<div class="c c4 block">4</div>
+			</div>
+			<div class="r">
+				<div class="c c9 block">9</div>
+				<div class="c c3 block">3</div>
+			</div>
+			<div class="r">
+				<div class="c c10 block">10</div>
+				<div class="c c2 block">2</div>
+			</div>
+			<div class="r">
+				<div class="c c11 block">11</div>
+				<div class="c c1 block">1</div>
+			</div>
+		</div>
+
+		<br>
+
+		<div id="grid-offset">
+			<div class="r">
+				<div class="c c50 block">50%</div>
+				<div class="c c50 block">50%</div>
+			</div>
+
+			<div class="r">
+				<div class="c c30 block">30%</div>
+				<div class="c c30 block">30%</div>
+				<div class="c c30 block">30%</div>
+			</div>
+
+			<div class="r">
+				<div class="c c30 ost30 block">30%</div>
+				<div class="c c30 block">30%</div>
+			</div>
+
+			<div class="r">
+				<div class="c c30 ostr block">30%</div>
+				<div class="c c30 ost30 block">30%</div>
+			</div>
+		</div>
+
+		<br>
+
+		<div id="tags">
+			<h1>h1 Tag FontSize</h1>
+			<h2>h2 Tag FontSize</h2>
+			<h3>h3 Tag FontSize</h3>
+			<h4>h4 Tag FontSize</h4>
+			<h5>h5 Tag FontSize</h5>
+			<h6>h6 Tag FontSize</h6>
+
+			<br>
+			<p>The <code>Bank</code> of the Philippines Islands (BPI) says a major system glitch led to customers being hit by unauthorised money withdrawals and deposits.
+The problematic transactions reached up to thousands of pesos. Some users claimed on social media that their accounts had even gone into the red.
+<mark>BPI</mark> chief executive Cezar Consing apologised on Wednesday morning in an interview with a local TV station.
+"This is not a hack, this is an internal issue," he said.
+"Over the next few hours, we are making sure the double credits, debits are corrected," he told ANC.
+Account holders on social media are claiming to have lost anything from 4,000 pesos ($80; £62) to up to 100,000 pesos.
+			</p>
+
+			<br>
+			
+			<pre>
+"Over the next few hours, we are making sure the double credits, debits are corrected," he told ANC.
+Account holders on social media are claiming to have lost anything from 4,000 pesos ($80; £62) to up to 100,000 pesos.
+			</pre>
+
+			<br>
+			
+			<ul>
+				<li>ul 1</li>
+				<li>ul 2</li>
+				<li>ul 3</li>
+			</ul>
+
+			<ol>
+				<li>ol 1</li>
+				<li>ol 2</li>
+				<li>ol 3</li>
+			</ol>
+
+			<table>
+				<thead>
+					<tr>
+						<th>1234</th>
+						<th>2123</th>
+						<th>3142</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Sam</td>
+						<td>Cloud</td>
+						<td>Buke</td>
+					</tr>
+					<tr>
+						<td>John</td>
+						<td>Bake</td>
+						<td>Lam</td>
+					</tr>
+					<tr>
+						<td>Jerry</td>
+						<td>Chris</td>
+						<td>Bill</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<input>
+			<input type="search">
+			<input type="button" value="button">
+			<button>Button</button>
+
+		</div>
+
+		<br>
+		
+		<div id="components">
+			<div>
+				<a class="u-btn u-d">ATAG</a>
+				<button class="u-btn u-d">BUTTON</button>
+				<input class="u-btn u-d" type="button" value="INPUT">
+				<input class="u-btn u-d" type="submit" value="SUBMIT">
+				<a class="u-btn u-d disabled" disabled>DISABLED</a>
+			</div>
+		
+			<br>
+			<div>
+				<a class="u-btn u-d">DEFAULT</a>
+				<a class="u-btn u-p">PRIMARY</a>
+				<a class="u-btn u-i">INFO</a>
+				<a class="u-btn u-w">WARNING</a>
+				<a class="u-btn u-e">ERROR</a>
+				<a class="u-btn u-o">OUTLINE</a>
+			</div>
+
+			<br>
+			<div>
+				<a class="u-btn u-do">COLOR1</a>
+				<a class="u-btn u-po">COLOR2</a>
+				<a class="u-btn u-io">COLOR3</a>
+				<a class="u-btn u-wo">COLOR4</a>
+				<a class="u-btn u-eo">COLOR5</a>
+			</div>
+
+			<br>
+			<div>
+				<a class="u-btn u-df sm">DEFAULT</a>
+				<a class="u-btn u-pf sm">PRIMARY</a>
+				<a class="u-btn u-if sm">INFO</a>
+			</div>
+
+			<br>
+			<div>
+				<a class="u-btn u-d">DEFAULT <i class="u-bdg"></i></a>
+				&nbsp;&nbsp;<a class="u-btn u-p"><i class="u-ico ion-ionic"></i> PRIMARY<i class="u-bdg u-e"></i></a>
+
+				&nbsp;&nbsp;<a class="u-btn u-d"><i class="u-ico ion-ios-email-outline"></i> MAIL<label class="u u-pc">99+</label></a>
+
+				&nbsp;&nbsp;&nbsp;&nbsp;<a class="u-btn u-d" disabled><i class="u-ico ion-android-drafts"></i> SUBMIT<i class="u-load-dots"></i></a>
+
+				&nbsp;&nbsp;<a class="u-btn u-df sm"><i class="u-ico ion-locked"></i> Lock <i class="u-load-dots"></i></a>
+				<a class="u-btn u-if sm"><i class="u-ico ion-edit"></i> Edit</a>
+			</div>
+		</div>
+
+		<br>
+
+	<div>
+		<div>
+			<input class="u u-d" placeholder="请输入...">
+			<input class="u u-s" placeholder="Success...">
+			<input class="u u-w" placeholder="Warning...">
+			<input class="u u-e" placeholder="Error...">
+		</div>
+		<br>
+		<div>
+			<input class="u u-d" readonly placeholder="请输入...">
+			<input class="u u-s" disabled placeholder="Success...">
+		</div>
+		<br>
+		<div>
+			<div class="u-input u-input-il">
+				<input class="u u-d" placeholder="Date Picker">
+				<i class="u-ico ion-ios-calendar"></i>
+			</div>
+
+			<div class="u-input u-input-ir">
+				<input class="u u-s" placeholder="Time Picker">
+				<i class="u-ico ion-ios-clock"></i>
+			</div>
+			<div class="u-input u-input-il">
+				<input type="search" class="u u-e" placeholder="Password" readonly>
+				<i class="u-ico ion-locked"></i>
+			</div>
+			<div class="u-input u-input-il">
+				<input type="password" class="u u-d is-disabled" disabled placeholder="Password">
+				<i class="u-ico ion-wifi"></i>
+			</div>
+		</div>
+		<br>
+		<div>
+			<div class="u-input-group">
+				<input class="u u-d" placeholder="Year" style="width:80px">
+				<input class="u u-d" placeholder="Month"  style="width:80px">
+				<input class="u u-d" placeholder="Day" style="width:80px">
+			</div>
+			<div class="u-input-group">
+				<input class="u u-d" placeholder="Hour" style="width:80px">
+				<input class="u u-d" placeholder="Minute" style="width:80px">
+			</div>
+		</div>
+		<br>
+		<div>
+			<div class="u-input-group">
+				<div class="u-input u-input-il">
+					<input class="u u-p" placeholder="Card" style="width:198px" value="430201199201096114">
+					<i class="u-ico ion-card"></i>
+				</div>
+				<div class="u-input u-input-il">
+					<input class="u u-p" placeholder="YY" style="width:80px">
+					<i class="u-ico ion-link"></i>
+				</div>
+				<div class="u-input u-input-il">
+					<input class="u u-p" placeholder="/DD" style="width:80px">
+					<i class="u-ico ion-more"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div>
+		<br>
+		<label class="u u-d">status</label>
+		<label class="u u-i">status</label>
+		<label class="u u-p">status</label>
+		<label class="u u-s">status</label>
+		<label class="u u-w">status</label>
+		<label class="u u-e">status</label>
+	</div>
+
+	<div>
+		<br>
+		<label class="u u-do">status</label>
+		<label class="u u-io">status</label>
+		<label class="u u-po">status</label>
+		<label class="u u-so">status</label>
+		<label class="u u-wo">status</label>
+		<label class="u u-eo">status</label>
+	</div>
+
+	<div>
+		<br>
+		<label class="u u-dc">12</label>
+		<label class="u u-ic">99+</label>
+		<label class="u u-pc">20</label>
+		<label class="u u-sc">100</label>
+		<label class="u u-wc">86</label>
+		<label class="u u-ec">1-</label>
+	</div>
+	
+	<div>
+		<br>
+		<span class="u u-tag u-d">Tag - A<i class="u-tag-x"></i></span>
+		<span class="u u-tag u-i">Tag - B<i class="u-tag-x"></i></span>
+		<span class="u u-tag u-p">Tag - C<i class="u-tag-x"></i></span>
+		<span class="u u-tag u-s">Tag - D<i class="u-tag-x"></i></span>
+		<span class="u u-tag u-w">Tag - E<i class="u-tag-x"></i></span>
+		<span class="u u-tag u-e">Tag - F<i class="u-tag-x"></i></span>
+	</div>
+
+	<div>
+		<br>
+		<label class="u u-checkbox">
+			<input type="checkbox" class="u-checkbox-input">
+			<span class="u-checkbox-status"></span>
+			<span class="u-checkbox-label">复选框</span>
+		</label>
+
+		<label class="u u-checkbox is-disabled">
+			<input type="checkbox" class="u-checkbox-input" disabled>
+			<span class="u-checkbox-status"></span>
+			<span class="u-checkbox-label">复选框</span>
+		</label>
+
+		<label class="u u-checkbox is-disabled">
+			<input type="checkbox" class="u-checkbox-input" checked disabled>
+			<span class="u-checkbox-status"></span>
+			<span class="u-checkbox-label">复选框</span>
+		</label>
+
+		<label class="u u-radio">
+			<input type="radio" name="test" class="u-radio-input">
+			<span class="u-radio-status"></span>
+			<span class="u-radio-label">单选框</span>
+		</label>
+		<label class="u u-radio">
+			<input type="radio" name="test" class="u-radio-input">
+			<span class="u-radio-status"></span>
+			<span class="u-radio-label">单选框</span>
+		</label>
+		<label class="u u-radio is-disabled">
+			<input type="radio" name="test" disabled class="u-radio-input">
+			<span class="u-radio-status"></span>
+			<span class="u-radio-label">单选框</span>
+		</label>
+		<label class="u u-radio is-disabled">
+			<input type="radio" checked name="t1" disabled class="u-radio-input">
+			<span class="u-radio-status"></span>
+			<span class="u-radio-label">单选框</span>
+		</label>
+		
+		
+	</div>
+	<br>
+	
+	<div>
+		<label class="u u-switch">
+			<input type="checkbox" class="u-switch-input">
+			<span class="u-switch-status"></span>
+			<span class="u-switch-on">ON</span>
+			<span class="u-switch-off">OFF</span>
+		</label>
+		<label class="u u-switch is-disabled">
+			<input type="checkbox" checked disabled class="u-switch-input">
+			<span class="u-switch-status"></span>
+			<span class="u-switch-on">ON</span>
+			<span class="u-switch-off">OFF</span>
+		</label>
+		<label class="u u-switch is-disabled">
+			<input type="checkbox" disabled class="u-switch-input">
+			<span class="u-switch-status"></span>
+			<span class="u-switch-on">ON</span>
+			<span class="u-switch-off">OFF</span>
+		</label>
+		<label class="u u-switch">
+			<input type="checkbox" class="u-switch-input">
+			<span class="u-switch-d"></span>
+		</label>
+		<label class="u u-switch is-disabled">
+			<input type="checkbox" disabled class="u-switch-input">
+			<span class="u-switch-d"></span>
+		</label>
+		<label class="u u-switch is-disabled">
+			<input type="checkbox" checked disabled class="u-switch-input">
+			<span class="u-switch-d"></span>
+		</label>	
+	</div>
+	<br>
+
+	<div>
+		<div class="u-pagenav-group">
+			<div class="pagenav-part">
+				<div class="pagenav-total">
+					总条数：20
+				</div>
+			</div>
+		    <div class="pagenav-part">
+		    	<ul class="pagenav-base">
+		    		<li title="上一页" class="page-prev is-disabled">
+				    </li>
+				    <li class="page-num">
+				    	<input type="text" value="23">
+				    	<span>/</span>
+				    	<span>333</span>
+				    </li>
+				    <li title="下一页" class="page-next">
+				    </li>
+		    	</ul>
+		    </div>
+
+		    <div class="pagenav-part">
+		    	<div class="pagenav-option">
+		    		<label class="option-num">
+		    			<input type="radio" name="limit" class="limit-input" checked>
+		    			<span class="option-limit">20</span>
+		    		</label>
+		    		<label class="option-num">
+						<input type="radio" name="limit" class="limit-input">
+						<span class="option-limit">50</span>
+		    		</label>
+		    		<label class="option-num">
+		    			<input type="radio" name="limit" class="limit-input">
+		    			<span class="option-limit">100</span>
+		    		</label>
+		    	</div>
+		    </div>
+		</div>
+
+	</div>
+
+	<br>
+	<div>
+		<div class="u u-select u-d">
+			<span class="u-select-text">Select...</span>
+		</div>
+		<div class="u u-select u-p">
+			<span class="u-select-text">Select...</span>
+		</div>
+		<div class="u u-select u-s">
+			<span class="u-select-text">Select...</span>
+		</div>
+		<div class="u u-select u-d is-disabled">
+			<span class="u-select-text">Select...</span>
+		</div>
+		<div class="u u-select u-e">
+			<span class="u-select-text">Select...</span>
+		</div>
+	</div>
+	<br>
+
+	<div>
+		<div class="u-extendinput u-d">
+			<span class="u-extendinput-tags">
+				<span class="u u-tag u-d">Tag1<i class="u-tag-x"></i></span>
+				<span class="u u-tag u-p">Tag2<i class="u-tag-x"></i></span>
+				<span class="u u-tag u-e">Tag3<i class="u-tag-x"></i></span>
+			</span>
+			<span class="u-extendinput-cursor" id="testeidt" contenteditable>Input Tag</span>
+		</div>
+
+		<div class="u-extendinput u-d is-disabled" disabled>
+			<span class="u-extendinput-tags">
+				<span class="u u-tag u-d">Tag1<i class="u-tag-x"></i></span>
+				<span class="u u-tag u-p">Tag2<i class="u-tag-x"></i></span>
+				<span class="u u-tag u-e">Tag3<i class="u-tag-x"></i></span>
+			</span>
+		</div>
+	</div>
+	
+	<br>
+		<div>
+			<table class="u u-hover u-ext-full-width">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>2123</th>
+						<th>3142</th>
+						<th>4321</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td scope="row">Sam</td>
+						<td>Cloud</td>
+						<td>Buke</td>
+						<td>Grunt</td>
+					</tr>
+					<tr>
+						<td scope="row">Slayer</td>
+						<td>Bake</td>
+						<td>Lam</td>
+						<td>Gulp</td>
+					</tr>
+					<tr>
+						<td scope="row">John</td>
+						<td>Chris</td>
+						<td>Jucky</td>
+						<td>Bill</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<br>
+		<div class="r" style="margin-bottom:20px;">
+			<div class="c c50">
+				<div class="u-popover" data-popover-pos="top" style="position:relative">
+					<div class="u-popover-title">标题</div>
+					<div class="u-popover-content">
+						这是一段内容,这是一段内容,这是一段内容,这是一段内容
+					</div>
+				</div>
+			</div>
+
+			<div class="c c50">
+				<div class="u-popover" data-popover-pos="bottom" style="position:relative">
+					<div class="u-popover-title">标题</div>
+					<div class="u-popover-content">
+						这是一段内容,这是一段内容,这是一段内容,这是一段内容
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="r" style="margin-bottom:20px;">
+			<div class="c c50">
+				<div class="u-popover" data-popover-pos="left" style="position:relative">
+					<div class="u-popover-title">标题</div>
+					<div class="u-popover-content">
+						这是一段内容,这是一段内容,这是一段内容,这是一段内容
+					</div>
+				</div>
+			</div>
+
+			<div class="c c50">
+				<div class="u-popover" data-popover-pos="right" style="position:relative">
+					<div class="u-popover-title">标题</div>
+					<div class="u-popover-content">
+						这是一段内容,这是一段内容,这是一段内容,这是一段内容
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<br>
+		<div class="u-ext-cls">
+			<div class="u-dropdown drop" style="position:relative; float:left; margin-right:30px;">
+				<div class="u-dropdown-item">
+					<i class="ion-arrow-return-right"></i>
+					<span>Arrow</span>
+				</div>
+				<div class="u-dropdown-item">
+					<i class="ion-gear-a"></i>
+					<span>Gear</span>
+				</div>
+				<div class="u-dropdown-item">
+					<i class="ion-stats-bars"></i>
+					<span>Stats</span>
+				</div>
+			</div>
+
+			<div class="u-dropdown drop" style="position:relative; float:left; margin-right:30px;">
+				<div class="u-dropdown-item">
+					<i class="ion-arrow-return-right"></i>
+					<span>Arrow</span>
+				</div>
+				<div class="u-dropdown-item">
+					<i class="ion-gear-a"></i>
+					<span>Gear</span>
+				</div>
+				<div class="u-dropdown-item is-active">
+					<i class="ion-stats-bars"></i>
+					<span>Stats</span>
+				</div>
+				<div class="u-dropdown-item is-disabled">
+					<i class="ion-chatbox-working"></i>
+					<span>Chatbox</span>
+				</div>
+				<div class="u-dropdown-item">
+					<i class="ion-ios-circle-filled"></i>
+					<span>Filled</span>
+				</div>
+			</div>
+
+			<br>
+		</div>
+
+		<br>
+		<div>
+			<div class="u-cascader">
+				<div class="u-cascader-tabs">
+					<div class="u-cascader-tab-item active">一级分类</div>
+					<div class="u-cascader-tab-item">二级分类</div>
+					<div class="u-cascader-tab-item">三级分类</div>
+				</div>
+				<div class="u-cascader-list">
+					<div class="u-cascader-list-item">1</div>
+					<div class="u-cascader-list-item">2</div>
+					<div class="u-cascader-list-item active">3</div>
+					<div class="u-cascader-list-item disabled">4</div>
+					<div class="u-cascader-list-item">5</div>
+					<div class="u-cascader-list-item">6</div>
+					<div class="u-cascader-list-item">7</div>
+				</div>
+			</div>
+		</div>
+
+		<br>
+		<div>
+			<div class="r">
+				<div class="c c3">
+					<textarea class="u u-d" cols="20" rows="5"></textarea>
+				</div>
+				<div class="c c3">
+					<textarea class="u u-p" cols="20" rows="5"></textarea>
+				</div>
+				<div class="c c3">
+					<textarea class="u u-s" cols="20" rows="5"></textarea>
+				</div>
+				<div class="c c3">
+					<textarea class="u u-e" cols="20" rows="5"></textarea>
+				</div>
+			</div>
+		</div>
+		<br>
+		
+
+	</div>
+</body>
+</html>

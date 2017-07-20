@@ -1,0 +1,24 @@
+.project
+.settings
+*~
+*.diff
+*.patch
+.DS_Store
+.bower.json
+.sizecache.json
+_aix.html
+_dom.html
+
+.eslintrc.json
+.idea
+.idea/
+.idea/*
+tmp/
+tmp/*
+
+npm-debug.log*
+
+# Ignore everything in dist folder except for eslint config
+/node_modules
+
+/test/node_smoke_tests/lib/ensure_iterability.js

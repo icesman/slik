@@ -1,0 +1,8 @@
+{
+ "scripts": {
+  "start": "browser-sync start --server --files **/*.html"
+ },
+ "dependencies": {
+  "browser-sync": "latest"
+ }
+}
